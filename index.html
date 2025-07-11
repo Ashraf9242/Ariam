@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة أفق الاستشارية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="floating-shape" style="width: 100px; height: 100px; background: var(--gradient-primary); border-radius: 50%;"></div>
+        <div class="floating-shape" style="width: 80px; height: 80px; background: var(--secondary-color); border-radius: 20px;"></div>
+        <div class="floating-shape" style="width: 60px; height: 60px; background: var(--primary-color); border-radius: 50%;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="nav-logo">
+                    <img src="logo.jpg" alt="logo" class="nav-logo-img" />
+                    أفق للاستشارات
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن المنصة</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#founder">المؤسسة</a></li>
+                <li><a href="#achievements">الإنجازات</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="logo-container">
+                    <div class="hero-logo">
+                        <img src="logo.jpg" alt="logo" class="hero-logo-img" />
+                    </div>
+                    <h1 class="hero-title">منصة أفق للاستشارات</h1>
+                </div>
+                <p class="hero-subtitle">
+                    نسعى دائماً لتقديم الاستشارات الاحترافية لضمان مستقبلك المهني والأكاديمي
+                </p>
+                <a href="#contact" class="cta-button">
+                    <i class="fas fa-rocket"></i>
+                    ابدأ رحلة نجاحك معنا اليوم
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">من نحن؟</h2>
+            <div class="about-content">
+                <div class="about-card fade-in">
+                    <div class="card-icon">👥</div>
+                    <p class="card-text">
+                        نحن فريق استشاري متميز نسعى لتقديم حلول متكاملة ومبتكرة تناسب احتياجاتك الأكاديمية والمهنية.
+                        نقدم لك الدعم في كل خطوة من مسيرتك، من البحث الأولي إلى التنفيذ الكامل للمشروع.
+                    </p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="card-icon">🎯</div>
+                    <p class="card-text">
+                        هدفنا هو تمكين الطلاب ورواد الأعمال من النجاح والتفوق عبر خدمات استشارية دقيقة، ودعم استراتيجي فعّال،
+                        لضمان تحقيق نتائج ملموسة تواكب تطلعاتك.
+                    </p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="card-icon">💼</div>
+                    <p class="card-text">
+                        خبراؤنا يمتلكون سنوات من الخبرة في المحاسبة، إدارة الأعمال، والبحوث الأكاديمية.
+                        نلتزم بأعلى معايير الجودة والمهنية لتحقيق نجاحك الأكاديمي والمهني.
+                    </p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="card-icon">🚀</div>
+                    <p class="card-text">
+                        نواكب تطورات السوق الأكاديمي وسوق العمل، ونقدم استشارات مرنة تتناسب مع متطلبات المستقبل.
+                        لأننا نؤمن أن كل مشروع يستحق أن ينجح!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section section" id="services">
+        <div class="container">
+            <h2 class="section-title fade-in">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="icon-wrapper">📚</div>
+                    <h3 class="service-title">مشاريع البزنس والمحاسبة</h3>
+                    <p class="service-description">نساعدك في إعداد مشاريعك الجامعية بأعلى جودة في المحاسبة والأعمال.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-wrapper">🎨</div>
+                    <h3 class="service-title">إعداد عروض احترافية</h3>
+                    <p class="service-description">عروض إبداعية تبرز فكرتك وتجذب الانتباه بخبرة تصميم عالية.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-wrapper">🎓</div>
+                    <h3 class="service-title">مشاريع التخرج</h3>
+                    <p class="service-description">استشارات وأفكار مبتكرة تضمن لك التميز الأكاديمي.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-wrapper">📖</div>
+                    <h3 class="service-title">البحوث العلمية</h3>
+                    <p class="service-description">بحوث دقيقة ومراجع موثوقة لضمان جودة المحتوى.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-wrapper">📊</div>
+                    <h3 class="service-title">دراسات جدوى وتقارير مالية</h3>
+                    <p class="service-description">ندرس جدوى أفكارك ونحولها لواقع مربح بخطط مالية محكمة.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-wrapper">💼</div>
+                    <h3 class="service-title">استشارات ودورات للباحثين عن عمل</h3>
+                    <p class="service-description">نمنحك الأدوات والثقة لتبدأ مسيرتك الوظيفية بقوة.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-wrapper">📝</div>
+                    <h3 class="service-title">كتابة البحوث بالعربية والإنجليزية</h3>
+                    <p class="service-description">تنسيق احترافي ومحتوى مميز بأسلوب أكاديمي رصين.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section section" id="founder">
+        <div class="container">
+            <h2 class="section-title fade-in">أريام الهنائية - المؤسسة</h2>
+            <div class="founder-content">
+                <div class="founder-image slide-in-left">
+                    <div class="founder-photo"><img src="ariam.webp" alt="Ariam"/></div>
+                </div>
+                <div class="founder-info slide-in-right">
+                    <h3 class="founder-name">أريام محمد سعيد الهنائية</h3>
+                    <p class="founder-title">رائدة أعمال، خريجة محاسبة، ومدربة معتمدة</p>
+                    <p class="founder-description">
+                        بدأت أريام مشوارها المهني بشغف في مجال الاستشارات المالية والأكاديمية، حيث أنشأت منصة أفق لتكون مركزًا متكاملاً
+                        لدعم الطلاب ورواد الأعمال. عملت كمساعدة باحث ومديرة مالية في عدة شركات طلابية وناشئة، وشاركت في مؤتمرات
+                        دولية مثل ICASF 2024. تؤمن أريام بأن النجاح يبدأ بخطوة، وتسعى لتمكين الشباب لبناء مستقبلهم بثقة وإبداع.
+                    </p>
+                    <div class="founder-highlights">
+                        <div class="highlight-badge">🎓 خريجة محاسبة</div>
+                        <div class="highlight-badge">💼 مديرة مالية</div>
+                        <div class="highlight-badge">🧠 مساعد باحث</div>
+                        <div class="highlight-badge">🌍 مشاركة دولية</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section section" id="achievements">
+        <div class="container">
+            <h2 class="section-title fade-in">إنجازاتنا</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">👩‍💼</div>
+                    <span class="achievement-number">10</span>
+                    <p class="achievement-text">استشارات فردية</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">🏢</div>
+                    <span class="achievement-number">4</span>
+                    <p class="achievement-text">استشارات لشركات</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">🎓</div>
+                    <span class="achievement-number">3</span>
+                    <p class="achievement-text">استشارات لشركات طلابية</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">📢</div>
+                    <span class="achievement-number">2+</span>
+                    <p class="achievement-text">مشاركات في المؤتمرات</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">📘</div>
+                    <span class="achievement-number">30</span>
+                    <p class="achievement-text">درساً خصوصياً</p>
+                </div>
+                <div class="achievement-card fade-in">
+                    <div class="achievement-icon">🎯</div>
+                    <span class="achievement-number">دورات</span>
+                    <p class="achievement-text">تدريبية متخصصة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in" style="color:white;">تواصل معنا</h2>
+            <div class="contact-content">
+                <div class="contact-info slide-in-left">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h4>رقم الهاتف</h4>
+                            <p>94087355</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>البريد الإلكتروني</h4>
+                            <p><a href="mailto:aryamalhinai63@gmail.com">aryamalhinai63@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/aryam-alhinai-0bb60a28a/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ufuq_consulting/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/96894087355" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form slide-in-right">
+                    <form id="contactForm" action="mailto:aryamalhinai63@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label>الاسم الكامل</label>
+                            <input type="text" placeholder="اكتب اسمك هنا" required>
+                        </div>
+                        <div class="form-group">
+                            <label>البريد الإلكتروني</label>
+                            <input type="email" placeholder="example@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>رسالتك</label>
+                            <textarea placeholder="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>منصة أفق للاستشارات</h3>
+                    <p>© 2025 منصة أفق للاستشارات - جميع الحقوق محفوظة</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#about">عن المنصة</a></li>
+                        <li><a href="#contact">التواصل</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                تم التصميم بكل ❤️ بواسطة فريق منصة أفق
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Loading Screen
+        window.addEventListener('load', function() {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.style.opacity = '0';
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = navToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animation elements
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Floating Particles Animation
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.width = particle.style.height = Math.random() * 10 + 5 + 'px';
+            particle.style.animationDuration = Math.random() * 3 + 2 + 's';
+            particle.style.opacity = Math.random() * 0.5 + 0.1;
+            
+            const particles = document.getElementById('particles');
+            if (particles) {
+                particles.appendChild(particle);
+                
+                setTimeout(() => {
+                    particle.remove();
+                }, 5000);
+            }
+        }
+
+        // Create particles periodically
+        setInterval(createParticle, 300);
+
+        // Form Submission
+        // Removed form submission event listener to allow mailto form submission
+        // document.getElementById('contactForm').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+            
+        //     // Get form data
+        //     const formData = new FormData(this);
+        //     const submitBtn = this.querySelector('.submit-btn');
+        //     const originalText = submitBtn.textContent;
+            
+        //     // Show loading state
+        //     submitBtn.textContent = 'جاري الإرسال...';
+        //     submitBtn.disabled = true;
+            
+        //     // Simulate form submission
+        //     setTimeout(() => {
+        //         alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.');
+        //         this.reset();
+        //         submitBtn.textContent = originalText;
+        //         submitBtn.disabled = false;
+
+        // Add hover effects to cards
+        document.querySelectorAll('.service-card, .about-card, .achievement-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-15px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Typing Effect for Hero Title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            
+            type();
+        }
+
+        // Initialize typing effect when page loads
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                const heroTitle = document.querySelector('.hero-title');
+                if (heroTitle) {
+                    const originalText = heroTitle.textContent;
+                    typeWriter(heroTitle, originalText, 80);
+                }
+            }, 1500);
+        });
+
+        // Counter Animation for Achievement Numbers
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateCounter() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target;
+                }
+            }
+            
+            updateCounter();
+        }
+
+        // Trigger counter animation when achievements section is visible
+        const achievementObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numbers = entry.target.querySelectorAll('.achievement-number');
+                    numbers.forEach(numberEl => {
+                        const target = parseInt(numberEl.textContent) || 0;
+                        if (target > 0) {
+                            animateCounter(numberEl, target);
+                        }
+                    });
+                    achievementObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe achievements section
+        const achievementsSection = document.querySelector('.achievements-section');
+        if (achievementsSection) {
+            achievementObserver.observe(achievementsSection);
+        }
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const heroSection = document.querySelector('.hero-section');
+            if (heroSection) {
+                heroSection.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Add dynamic background color change on scroll
+        window.addEventListener('scroll', function() {
+            const scrollPercent = window.pageYOffset / (document.body.scrollHeight - window.innerHeight);
+            const hue = Math.floor(scrollPercent * 60) + 180; // Range from 180 to 240
+            document.documentElement.style.setProperty('--primary-color', `hsl(${hue}, 60%, 45%)`);
+        });
+
+        // Add click ripple effect to buttons
+        document.querySelectorAll('.cta-button, .submit-btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+
+        // Add CSS for ripple effect
+        const style = document.createElement('style');
+        style.textContent = `
+            .cta-button, .submit-btn {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .ripple {
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                transform: scale(0);
+                animation: ripple-animation 0.6s linear;
+                pointer-events: none;
+            }
+            
+            @keyframes ripple-animation {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add mouse cursor trail effect
+        let mouseTrail = [];
+        const maxTrailLength = 20;
+
+        document.addEventListener('mousemove', function(e) {
+            mouseTrail.push({x: e.clientX, y: e.clientY, time: Date.now()});
+            
+            if (mouseTrail.length > maxTrailLength) {
+                mouseTrail.shift();
+            }
+            
+            // Remove old trail points
+            mouseTrail = mouseTrail.filter(point => Date.now() - point.time < 1000);
+        });
+
+        // Performance optimization: Throttle scroll events
+        let ticking = false;
+        
+        function updateOnScroll() {
+            // All scroll-based animations here
+            ticking = false;
+        }
+        
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                requestAnimationFrame(updateOnScroll);
+                ticking = true;
+            }
+        });
+
+        // Add keyboard navigation support
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }
+        });
+
+        document.addEventListener('mousedown', function() {
+            document.body.classList.remove('keyboard-navigation');
+        });
+
+        // Add focus styles for keyboard navigation
+        const keyboardStyle = document.createElement('style');
+        keyboardStyle.textContent = `
+            .keyboard-navigation *:focus {
+                outline: 3px solid var(--primary-color) !important;
+                outline-offset: 2px !important;
+            }
+        `;
+        document.head.appendChild(keyboardStyle);
+
+        console.log('🚀 Afaq Consulting Website loaded successfully!');
+    </script>
+</body>
+</html>
